@@ -7,6 +7,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var nunjucks = require('nunjucks');
 
+var knex = require('./database');
+
 var routes = require('./routes/index');
 var users = require('./routes/user');
 
@@ -15,6 +17,7 @@ var app = express();
 var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
 app.locals.ENV_DEVELOPMENT = env == 'development';
+
 
 // load cachebusted assets
 var assets = {};
@@ -31,6 +34,11 @@ app.locals.getCachebustedPath = function (path) {
     var p = (isCachebusted) ? 'dist/' + isCachebusted : path;
     return assetVirtualDir + '/' + p;
 };
+
+var staticDir = path.join(__dirname + '/public');
+app.use('/' + assetVirtualDir, express.static(staticDir, {
+    maxAge: '30d'
+}));
 
 // view engine setup
 
@@ -49,14 +57,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 
-
-var staticDir = path.join(__dirname + '/public');
-app.use('/' + assetVirtualDir, express.static(staticDir, {
-    maxAge: '30d'
-}));
+app.use(require('express-promise')());
 
 app.use('/', routes);
 app.use('/users', users);
+
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

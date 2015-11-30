@@ -1,10 +1,18 @@
 var express = require('express');
 var router = express.Router();
-
-/* GET home page. */
+var knex = require('../database');
 
 router.get('/', function(req, res) {
-    res.render('index', { title: 'Express' });
+    var news = knex.select('headline_text', 'date_posted').from('news').limit(10);
+    var reviews = knex.select('band_name', 'record_name')
+        .join('records', 'reviews.record_id', 'records.id')
+        .join('bands', 'records.band_id', 'bands.id')
+        .from('reviews').limit(10);
+    res.render('index', {
+        title: 'Express',
+        news: news,
+        reviews: reviews
+    });
 });
 
 module.exports = router;

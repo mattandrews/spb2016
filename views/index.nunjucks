@@ -3,4 +3,14 @@
 {% block content %}
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
+    <ul>
+    {% for n in news %}
+        <li>{{ n.headline_text }}</li>
+    {% endfor %}
+    </ul>
+    <ul>
+    {% for r in reviews %}
+        <li>{{ r.band_name }} - {{ r.record_name }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}
