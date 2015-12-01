@@ -1,0 +1,123 @@
+@media screen and (max-width: 599px) {
+    .row-fluid [class*="span"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .nav {
+        margin: 0;
+    }
+
+    .component {
+        margin-bottom: 10px;
+    }
+
+    .nav,
+    .nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        padding: 0 7px;
+        margin: 0 5px 8px 0;
+        text-align: center;
+        background: #fff;
+        border-right: 0;
+        font-size: 15px;
+    }
+
+    .nav li:last-of-type {
+        padding: 0 7px;
+    }
+
+    .inner {
+        padding: 10px;
+    }
+
+    .hero-sidebar {
+        text-align: center;
+    }
+
+    .hero-sidebar a img {
+        width: 18%;
+        /* works for 4 images only */
+        margin: 0;
+        margin-right: 2%;
+        border: 5px solid #fff;
+        background: #fff;
+    }
+
+    .hero-5 .hero-sidebar a img {
+        width: 15%;
+    }
+
+    .hero-main img {
+        width: 100%;
+    }
+
+    .sidelined {
+        text-align: left;
+    }
+
+    .randomizer .inner {
+        min-height: auto;
+    }
+
+    /* don't work on mobile */
+    .ad-skyscraper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .nav li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .floatleft {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+
+    .floatright {
+        float: right;
+        margin: 0 0 10px 10px;
+    }
+}
+
+@media screen and (min-width: 1320px) {
+    .container {
+        width: 70%;
+    }
+}
+
+.contains-magic {
+    position: relative;
+}
+
+.initially-off,
+.hidden-content {
+    display: none;
+}
+
+a.read-more:before {
+    content: "+ ";
+}
+
+a.read-more.expanded:before {
+    content: "- ";
+}
+
+.highlight {
+    background: yellow;
+    padding: 1px 3px;
+    color: #333;
+}

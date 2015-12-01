@@ -1,0 +1,414 @@
+.media,
+.bd {
+    overflow: hidden;
+}
+
+.media .img {
+    float: left;
+    margin-right: 10px;
+}
+
+.media .img img {
+    display: block;
+}
+
+.media-right .img {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.media-wrap .img {
+    margin-bottom: 10px;
+}
+
+.media-wrap .bd {
+    overflow: visible;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.nav li:last-of-type {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.nav li a:hover,
+.nav li a.active {
+    border-bottom: 5px solid #ccc;
+}
+
+.nav-footer li {
+    font-size: 12px;
+}
+
+.nav-footer form {
+    vertical-align: baseline;
+}
+
+.social-share {
+    float: left;
+    width: 55px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.social-share.edge {
+    margin-left: -12px;
+}
+
+.social-buttons {
+    float: right;
+    margin-bottom: 4px;
+}
+
+.social-buttons li {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+#randomizer-placeholder {
+    margin-bottom: 10px;
+}
+
+.randomizer-controls {
+    text-align: center;
+}
+
+.randomizer .inner {
+    min-height: 475px;
+}
+
+.tab-pane {
+    clear: both;
+}
+
+ul.tabs {
+    margin-left: 10px;
+}
+
+ul.tabs li {
+    float: left;
+}
+
+ul.tabs li a {
+    margin-right: 5px;
+    padding: 3px 10px;
+    display: block;
+}
+
+ol.count,
+article ol {
+    list-style-type: decimal;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul.bulleted,
+article ul {
+    list-style-type: square;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ol.count li,
+ul.bulleted li,
+article li {
+    margin-bottom: 6px;
+}
+
+.pagination {
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.pagination li:last-child {
+    margin-right: 0;
+}
+
+.pagination li a,
+.pagination li.current {
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+}
+
+.pagination li a:hover {
+    color: maroon;
+    background: #fff;
+}
+
+.pagination li.prev a:before {
+    content: "« ";
+}
+
+.pagination li.next a:after {
+    content: " »";
+}
+
+.pagination li.next a,
+.pagination li.prev a {
+    border-color: #999;
+}
+
+.letters li {
+    float: left;
+}
+
+.letters li a {
+    border: 1px solid #999;
+    padding: 3px 8px;
+    margin: 3px;
+    background: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 15px;
+}
+
+.letters li a:hover {
+    background-color: #efefef;
+}
+
+h1.setlist {
+    color: #E03333;
+    border: 0;
+    font-size: 72px;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    float: left;
+}
+
+h1.setlist-minor {
+    font-size: 55px;
+    color: #D57070;
+}
+
+div.setlist {
+    margin-left: 75px;
+    border-top: 1px dotted #999;
+    margin-bottom: 30px;
+}
+
+.hero {
+    background: #d0dce5;
+}
+
+.hero-sidebar {
+    padding: 2.127659574%;
+    /* from fluid grid */
+    padding-right: 0;
+}
+
+.hero-sidebar img {
+    margin-bottom: 5%;
+}
+
+.hero-sidebar a:last-child li {
+    margin-bottom: 0;
+}
+
+.row-fluid .hero-sidebar {
+    width: 17.7%;
+    /* experimental... */
+}
+
+// 5 mode
+.hero-5 .hero-sidebar {
+    width: 15.9%;
+}
+
+.row-fluid .hero-main {
+    width: 80%;
+    /* plus the 17.7, close enough... */
+    float: right;
+    font-size: 0;
+    line-height: 0;
+}
+
+// 5 mode
+.hero-5 .hero-main {
+    margin-top: 10px;
+    width: 78.5%;
+    margin-left: 14px;
+    float: left;
+}
+
+.hero-text {
+    background: #333333;
+    padding: 10px;
+    color: #fff;
+}
+
+.hero-text h1 {
+    color: #d0dce5;
+}
+
+.hero-text a {
+    color: #82accc;
+}
+
+.hero-text a:hover {
+    color: #9dcef4;
+}
+
+.poll-votes {
+    background: #fff;
+    margin: 5px 0 10px;
+    height: 12px;
+    text-indent: -1000em;
+    font-size: 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.poll-votes span {
+    background: #055899;
+    display: block;
+    font-size: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+}
+
+.poll-answer {
+    font-weight: bold;
+    border-top: 1px dotted #999;
+    display: block;
+    padding: 3px 0;
+}
+
+.poll-answer label {
+    border: none;
+}
+
+.poll-selected-answer {
+    color: #CE0000;
+}
+
+ol.js-playlist {
+    background: #333;
+    list-style-position: inside;
+    margin: 0 10px;
+    padding: 15px 20px 10px;
+    color: #fff;
+    box-shadow: inset 0 5px 5px #000;
+    -webkit-box-shadow: inset 0 5px 5px #000;
+    -moz-box-shadow: inset 0 5px 5px #000;
+    overflow: hidden;
+    position: relative;
+}
+
+ol.js-playlist li {
+    margin-bottom: 7px;
+    border-bottom: 1px dotted #666;
+    padding-bottom: 7px;
+    text-indent: -10px;
+}
+
+.js-playlist li a {
+    color: #53a9e9;
+}
+
+.js-playlist li a:hover {
+    color: #ccc;
+}
+
+.playlist-expand {
+    text-align: right;
+    display: block;
+    width: auto;
+    margin-right: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+li.playing {
+    background: #43474B;
+}
+
+.dialog-box {
+    width: 350px;
+    padding: 10px;
+    position: absolute;
+    z-index: 100000;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-top: 10px solid #ccc;
+    border-bottom: 10px solid #ccc;
+    box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+}
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #000;
+}
+
+#js-close-dialog {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font: bold 16px arial;
+    border-radius: 20px;
+    background: #ccc;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.msg-box {
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.msg-success {
+    background-color: #BCE2B9;
+    border-color: #97C797;
+}
+
+.msg-error {
+    background-color: #BB2241;
+    border-color: #E9A4A6;
+    color: #ffffff;
+}
+
+.msg-error a {
+    color: #F0DE5E;
+}
+
+.msg-error a:hover {
+    color: #D8D8B3;
+}
+
+.gallery__item {
+    margin-bottom: 25px;
+}
+
+.gallery__media {
+    height: 120px;
+    overflow: hidden;
+    display: block;
+}

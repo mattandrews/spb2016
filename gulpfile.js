@@ -41,7 +41,7 @@ gulp.task('copy', function () {
 });
 
 gulp.task('sass', function () {
-    gulp.src(folders.assets.sass + '**/*.scss')
+    gulp.src(folders.assets.sass + '**/main.scss')
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass())

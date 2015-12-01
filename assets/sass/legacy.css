@@ -1,0 +1,246 @@
+.clearLeft {
+    clear: left;
+}
+
+.floatleft {
+    float: left;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.floatRight {
+    float: right;
+    margin-left: 10px;
+}
+
+.labelTitle {
+    width: 450px;
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    background-image: url(http://img.scenepointblank.com/label_bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.labelTitle h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: #571414;
+    margin: 0px;
+}
+
+.labelTitle h3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #c68080;
+    margin: 0px;
+    text-align: right;
+}
+
+.labelTitle img {
+    float: left;
+    padding-left: 15px;
+    top: 0px;
+    border: none;
+    background: none;
+}
+
+.titleBox {
+    background-image: url(http://img.scenepointblank.com/title_bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 400px;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+}
+
+.titleBox h2 {
+    font-size: 24px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #893333;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0px;
+    font-variant: small-caps;
+    line-height: normal;
+}
+
+.top30 img {
+    float: left;
+    clear: left;
+    padding: 0px;
+    border: 5px solid #7C93B9;
+    margin: 8px;
+}
+
+.top30 {
+    height: 200px;
+    clear: left;
+}
+
+.box_2007 {
+    width: 587px;
+    margin: 0px auto;
+    height: 202px;
+    background-image: url(http://img.scenepointblank.com/ptm_bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.box_2007 img {
+    float: right;
+    top: 0px;
+    padding: 25px 25px 25px 5px;
+    border: none;
+    background: none;
+}
+
+.box_2007 h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: right;
+    margin-bottom: 0px;
+    padding-top: 110px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.box_2007 h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: right;
+    color: #993300;
+    font-variant: small-caps;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.yir_2007 {
+    background: url(http://img.scenepointblank.com/yir_bg.gif) no-repeat left top;
+    height: 237px;
+    width: 457px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.yir_2007 h1 {
+    width: 370px;
+    height: 70px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-top: 125px;
+    margin-left: 36px;
+}
+
+.yir_sidebar {
+    height: 548px;
+    width: 213px;
+    float: right;
+    padding: 5px;
+}
+
+.float_2008 {
+    float: right;
+    padding: 5px;
+    border: none;
+    background: none;
+}
+
+.ptm2008 {
+    background: url(http://www.scenepointblank.com/assets/img/features/2008/ptm_bg.gif);
+    width: 447px;
+    height: 158px;
+}
+
+.ptm2008 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aea828;
+    letter-spacing: -2px;
+    float: right;
+    width: 265px;
+    height: 95px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.ptm_2009 {
+    background: url(http://www.scenepointblank.com/assets/img/features/2009/ptm_bg.gif) no-repeat;
+    height: 70px;
+    width: 270px;
+    color: #593622;
+    font: bold 18px Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+    padding-left: 185px;
+    margin: 0px;
+    display: block;
+}
+
+.ptm_taller {
+    padding-top: 80px;
+    height: 90px;
+}
+
+.floatright2009 {
+    float: right;
+    border: none;
+    margin-left: 10px;
+}
+
+.yearend2011 {
+    background: #efefef url(http://img.scenepointblank.com/icons/spb2011_button.png) no-repeat;
+    padding-left: 61px;
+    overflow: hidden;
+    min-height: 44px;
+    border-top: 4px solid #CCC;
+    padding-top: 8px;
+    background-position: 11px 11px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    font: 18px/23px georgia;
+    color: #333;
+    padding-right: 10px;
+}
+
+.ptm2011 {
+    min-height: 85px;
+    padding-left: 89px;
+    background-color: #efefef;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    border-top: 4px solid #567B98;
+    font: bold 14px/18px arial;
+    padding-top: 5px;
+    color: #333;
+    padding-right: 400px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.ptm2012 {
+    overflow: hidden;
+    color: #4881A7;
+    margin: 5px 0px;
+    font-size: 13px;
+    border-bottom: 1px solid #E7E6E6;
+    padding-bottom: 6px;
+}
+
+.ptm2012name {
+    background: #49a0bb;
+    padding: 10px;
+    color: #DDF0FF;
+    border-top: 5px solid #3D879E;
+    font-size: 16px;
+}
+
+.ptm2012name span {
+    font-size: 16px;
+    margin-right: 2px;
+    background: #2B7186;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px solid #2B7186;
+    color: #fff;
+}
