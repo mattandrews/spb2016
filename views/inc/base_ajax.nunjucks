@@ -1,0 +1,1 @@
+{% block page %}--page goes here--{% endblock %}

@@ -1,0 +1,20 @@
+<ul class="social-buttons">
+	<li>Follow us:</li>
+	<li class="twitter"><a href="https://twitter.com/scenepointblank" title="Twitter"><i class="i i-twitter-off">Twitter</i></a></li>
+	<li class="facebook"><a href="http://www.facebook.com/ScenePointBlank" title="Facebook"><i class="i i-facebook-off">Facebook</i></a></li>
+	<li class="tumblr"><a href="http://scenepointblank.tumblr.com/" title="Tumblr"><i class="i i-tumblr-off">Tumblr</i></a></li>
+	<li class="googleplus"><a rel="publisher" href="https://plus.google.com/115605262440806903750" title="Google+"><i class="i i-googleplus-off">Google+</i></a></li>
+	<li class="lastfm"><a href="http://www.last.fm/group/Scene+Point+Blank" title="last.fm"><i class="i i-lastfm-off">last.fm</i></a></li>
+</ul>
+
+<div class="row-fluid">
+	<div class="span12 masthead component">
+		<a href="/" class="logo"><i class="i i-logo">Scene Point Blank homepage</i></a>
+	</div>
+
+	<div class="row-fluid">
+		<div class="span12 nav component">
+			nav top
+		</div>
+	</div>
+</div>

@@ -1,0 +1,165 @@
+{% extends "inc/base.nunjucks" %}
+
+{% block title %}Home{% endblock %}
+{% block meta_desc %}
+	<meta name="description" content="Music webzine covering punk, hardcore punk, indie and alternative. Album reviews, interviews, music news and more." />
+	<meta property="og:title" content="Home: latest music news, reviews, interviews, features and more" />
+	<meta property="og:description" content="Music webzine covering punk, hardcore punk, indie and alternative. Album reviews, interviews, music news and more." />
+{% endblock %}
+
+{% block page %}
+
+		<div class="row-fluid component">
+			<!-- error below -->
+			<div class="span12">
+
+				<div class="span6">
+					<h6>Top features</h6>
+
+					<div class="hero component">
+						<div class="row-fluid hero-5">
+							<div class="span3 hero-sidebar">
+								{% if features %}
+									{% for f in features|slice(5) %}
+			                                    <a href="/features/{{ f.section_name_link }}/{{ f.title_link }}"
+			                                       data-count="{{ loop.index }}"
+			                                       title="{{ f.section_name }}: {{ f.title }}">
+			                                    	<img src="{{ f.image }}"
+			                                    		 data-hi-src="{{ f.image }}"
+			                                    	     alt="{{ f.title }}"
+			                                    	     class="maxed" />
+			                            		</a>
+									{% endfor %}
+								{% endif %}
+							</div>
+							<div class="span9 hero-main">
+								{% if features %}
+									{% for f in features|slice(1) %}
+										<a href="/features/{{ f.section_name_link }}/{{ f.title_link }}" title="{{ f.section_name }}: {{ f.title }}">
+											<img class="maxed" src="{{ f.image }}" alt="{{ f.title }}" />
+										</a>
+									{% endfor %}
+								{% endif %}
+							</div>
+						</div>
+
+						<div class="hero-text">
+							{% if features %}
+								{% for f in features|slice(5) %}
+									<div id="js-hp-ftr-{{ loop.index }}" class="{% if not loop.first %}initially-off{% endif %}">
+										{% if not f.is_visible %}<span class="tag">Staff-only preview</span>{% endif %}
+										<h1>{{ f.section_name }}: <a href="/features/{{ f.section_name_link }}/{{ f.title_link }}">{{ f.title }}</a></h1>
+										<p>{{ f.featurebody|safe }} <a href="/features/{{ f.section_name_link }}/{{ f.title_link }}">read more</a></p>
+									</div>
+								{% endfor %}
+							{% endif %}
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="media media-right media-wrap">
+							<h6>Top story</h6>
+							 n.headline_text
+						</div>
+					</div>
+
+					<h6>More news headlines</h6>
+
+					{% if news %}
+						{% for n in news|slice(1) %}
+							{{ n.headline_text }}
+						{% endfor %}
+					{% endif %}
+
+					<a class="navlink" href="/news/">Browse more news</a>
+
+				</div>
+
+				<div class="span6">
+
+					<div class="row-fluid">
+
+						<div class="span12 inner component">
+							<h6>Top review</h6>
+						</div>
+					</div>
+
+					{% if streams %}
+						<div class="component stream inner">
+							<h6>Exclusive album stream</h6>
+						</div>
+					{% endif %}
+
+					<div class="row-fluid">
+						<div class="span8">
+							<h6>More albums</h6>
+							<div class="inner component">
+								{% if reviews %}
+									{% for r in reviews|slice(11) %}
+
+									{% endfor %}
+								{% endif %}
+							</div>
+						</div>
+						<div class="span4 sidelined">
+
+							<h6>Blogs</h6>
+							<div class="component">
+								{% if blogs %}
+									{% for b in blogs|slice(4) %}
+										<h3><a href="/blog/{{ b.title_link }}">{{ b.title }}</a></h3>
+										<h5>Posted by {{ b.displayname }} <br />{{ b.date_posted }}</h5>
+										<p>{{ b.body|safe|truncate(30) }} <a href="/blog/{{ b.title_link }}">read more</a></p>
+									{% endfor %}
+								{% endif %}
+							</div>
+						</div>
+
+						{% if competitions %}
+							<div class="component">
+								<h6>Competitions</h6>
+								{% for c in competitions %}
+									<h3><a href="/competitions/{{ c.competition_link }}">{{ c.competition_name }}</a></h3>
+									<p class="dimmed">Posted <abbr class="timeago" title="{{ c.date_posted }}">{{ c.date_posted }}</abbr>
+									<p>{{ c.competition_text|striptags|truncate(50) }} <a href="/competitions/{{ c.competition_link }}">more information</a></p>
+								{% endfor %}
+							</div>
+						{% endif %}
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- error above -->
+		<div class="row-fluid component">
+			<div class="span9">
+
+				<div class="row-fluid componentx">
+					<div class="span8 component" id="js-popular-widget"></div>
+					<script>
+						$(document).ready(function(){
+							// $.get('/ajax/popular/all/', function(html){
+							// 	$('#js-popular-widget').html(html);
+							// 	$("img.lazy").unveil();
+							// });
+						});
+					</script>
+					<div class="span4">
+					</div>
+
+				</div>
+			</div>
+
+			<div class="span3">
+				<h6>Recent reader comments</h6>
+				<script type="text/javascript" src="http://scenepointblank.disqus.com/recent_comments_widget.js?num_items=3&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+
+				<h6>Poll of the week</h6>
+				<div class="component">
+
+				</div>
+			</div>
+		</div>
+
+{% endblock %}
